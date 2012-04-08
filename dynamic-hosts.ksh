@@ -6,8 +6,8 @@ domain="${PDNS_BACKEND_DYNAMIC_HOSTS_DOMAIN-example.jp}"
 network="${PDNS_BACKEND_DYNAMIC_HOSTS_NETWORK-192.168}"
 ttl="${PDNS_BACKEND_DYNAMIC_HOSTS_TTL-3600}"
 
-name_prefix="host-"
-name_separator="-"
+name_prefix="${PDNS_BACKEND_DYNAMIC_HOSTS_NAME_PREFIX-host-}"
+name_separator="${PDNS_BACKEND_DYNAMIC_HOSTS_NAME_SEPARATOR--}"
 
 ## ======================================================================
 
