@@ -60,3 +60,5 @@ while read -r type qname qclass qtype id ip garbage; do
   echo "END"
 done
 
+exit 0
+
