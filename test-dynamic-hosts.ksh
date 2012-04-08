@@ -13,7 +13,7 @@ a_d="DATA	$a_q	IN	A	3600	-1	22.1.168.192.in-addr.arpa"
 
 {
   echo "HELO	1"
-  echo "Q $a_q IN A -1 10.0.0.1"
+  echo "Q	$a_q	IN	A	-1	10.0.0.1"
 } \
 |./dynamic-hosts.ksh \
 | {
@@ -35,7 +35,7 @@ a_d="DATA	$a_q	IN	PTR	3600	-1	host-100-200.example.jp"
 
 {
   echo "HELO	1"
-  echo "Q $a_q IN PTR -1 1.1.1.1"
+  echo "Q	$a_q	IN	PTR	-1	1.1.1.1"
 } \
 |./dynamic-hosts.ksh \
 | {

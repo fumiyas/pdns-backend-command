@@ -36,7 +36,7 @@ echo "OK	$0"
 
 ## ======================================================================
 
-while read -r type qname qclass qtype id ip garbage; do
+while IFS="	" read -r type qname qclass qtype id ip garbage; do
   if [[ $qtype = @(A|ANY) ]] && [[ -z ${qname%%*.$domain} ]]; then
     name=""
     qname_tmp="${qname%%.$domain}$name_separator"
