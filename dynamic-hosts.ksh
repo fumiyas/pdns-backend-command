@@ -1,4 +1,12 @@
 #!/bin/ksh
+##
+## PowerDNS pipe backend: Dynamic hosts (proof-of-concept)
+## Copyright (c) 2012 SATOH Fumiyasu @ OSS Technology, Inc. Japan
+##               <https://github.com/fumiyas>
+##               <http://www.osstech.co.jp>
+##
+## Published under the GNU GPLv3 or later
+##
 
 set -u
 
