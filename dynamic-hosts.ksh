@@ -8,6 +8,12 @@
 ## Published under the GNU GPLv3 or later
 ##
 
+## Example pdns.conf (ordinaly resouce records are served by MySQL backend):
+##   launch=gmysql,pipe
+##   pipe-command=/path/dynamic-hosts.ksh
+##   pipe-regex=;(A|PTR|ANY)$
+##   pipebackend-abi-version=1
+
 set -u
 
 domain="${PDNS_BACKEND_DYNAMIC_HOSTS_DOMAIN-example.jp}"
